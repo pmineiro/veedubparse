@@ -11,9 +11,10 @@ how to use
 ===========
 
 1. Make a parser
-
-       using namespace veedubparse;
-       StandardParse<HashString> parser;
+        
+        using namespace veedubparse;
+        std::ios::sync_with_stdio (false); // otherwise performance can be poor (?)
+        StandardParse<HashString> parser;
 
    You can choose `HashString` or `HashAll` which correspond to the vowpal wabbit 
    [hash command line option](https://github.com/JohnLangford/vowpal_wabbit/wiki/Feature-Hashing-and-Extraction#the---hash-command-line-option).
