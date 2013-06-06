@@ -17,7 +17,7 @@ how to use
         StandardParse<HashString> parser;
 
    You can choose `HashString` or `HashAll` which correspond to the vowpal wabbit 
-   [hash command line option](https://github.com/JohnLangford/vowpal_wabbit/wiki/Feature-Hashing-and-Extraction#the---hash-command-line-option).
+   [hash command line option](https://github.com/JohnLangford/vowpal_wabbit/wiki/Feature-Hashing-and-Extraction#the---hash-command-line-option).  You could also pass your own class which implements a different hashing strategy.
 
 2. Pass the parser a `std::istream` and a callback.  Nowadays with the lambda syntax this is super easy.
 
