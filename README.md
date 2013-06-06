@@ -33,3 +33,4 @@ how to use
                      // bad input line encountered
                    }
                });
+    The parser will consume lines from the input stream and repeatedly invoke the callback until the stream is exhausted.
